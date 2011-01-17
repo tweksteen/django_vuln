@@ -1,0 +1,16 @@
+<h1>Path traversal</h1>
+
+<ul>
+    <li>
+        <span class="title"><a href="{% url path_traversal.views.basic %}?file=beach_1.jpg">Get a nice picture</a></span>
+        <span class="description">A simple path traversal challenge, non-existing protection</span>
+    </li>
+    <li>
+        <span class="title"><a href="{% url path_traversal.views.advanced %}?file=beach_3.jpg">Get another picture</a></span>
+        <span class="description">A more complex path traversal weakness, based on the existing Django static serve component</span>
+    </li>
+</ul>
+
+<!-- Images "What we need is to use what we have" by Lou Beach
+     from http://butdoesitfloat.com/45103/What-we-need-is-to-use-what-we-have
+-->

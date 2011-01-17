@@ -1,0 +1,20 @@
+<h1>XSS</h1>
+
+<ul>
+    <li>
+        <span class="title"><a href="{% url xss.views.basic %}?name=Captain">G'Day Captain !</a></span>
+        <span class="description">A simple XSS challenge, non-existing protection</span>
+    </li>
+    <li>
+        <span class="title"><a href="{% url xss.views.stripped %}?name=Captain">Bonjour again</a></span>
+        <span class="description">A simple XSS challenge, weak filtering</span>
+    </li>
+    <li>
+        <span class="title"><a href="{% url xss.views.js_based %}?name=Captain">Welcome back Captain</a></span>
+        <span class="description">XSS challenge, get your js editor ready</span>
+    </li>
+    <li>
+        <span class="title"><a href="{% url xss.views.dom_based %}?name=Captain">Really, more ?</a></span>
+        <span class="description">XSS challenge, DOM-based</span>
+    </li>
+</ul>
