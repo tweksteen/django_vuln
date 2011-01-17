@@ -11,7 +11,7 @@ To install it, clone it and run:
 
 Then go to : http://127.0.0.1:8000
 
-Currently, there are three applications:
+Currently, there are four applications:
 
  * SQL injection
  * XPath injection
