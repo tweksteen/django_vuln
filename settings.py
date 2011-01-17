@@ -80,6 +80,13 @@ TEMPLATE_DIRS = (
     "./templates/"
 )
 
+WEAK_APPS = (
+    'sql_injection',
+    'xpath_injection',
+    'path_traversal',
+    'xss'
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,7 +94,4 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.admin',
-    'sql_injection',
-    'path_traversal',
-    'xss'
-)
+) + WEAK_APPS

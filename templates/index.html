@@ -1,5 +1,6 @@
 <html>
-{% include "sql_injection/index.html" %}
-{% include "path_traversal/index.html" %}
-{% include "xss/index.html" %}
+{{ apps }}
+{% for app_index in apps_index %}
+  {% include app_index %}
+{% endfor %}
 </html>

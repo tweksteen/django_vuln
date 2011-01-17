@@ -1,0 +1,10 @@
+<title>CCNumber</title>
+<form action="basic" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" value="{% if name %}{{ name }}{% else %}MCotillard{% endif %}">
+    <input type="submit">
+</form>
+
+{% if result %}
+FirstName : {{ result }}
+{% endif %}
