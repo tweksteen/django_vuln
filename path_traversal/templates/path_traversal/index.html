@@ -4,10 +4,14 @@
     <li>
         <span class="title"><a href="{% url path_traversal.views.basic %}?file=beach_1.jpg">Get a nice picture</a></span>
         <span class="description">A simple path traversal challenge, non-existing protection</span>
+        <span class="hint">(dot-dot me)</span>
+        
     </li>
     <li>
         <span class="title"><a href="{% url path_traversal.views.advanced %}?file=beach_3.jpg">Get another picture</a></span>
         <span class="description">A more complex path traversal weakness, based on the existing Django static serve component</span>
+        <span class="hint">(play with encoding)</span>
+        
     </li>
 </ul>
 
